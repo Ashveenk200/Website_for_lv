@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L0ve</title>
+    <style>
+        body {
+            background-color: pink;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        img {
+            max-width: 70%;
+            height: 300px;
+            border-radius: 25px;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            background-color: blue;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: darkblue;
+        }
+
+        .button.no {
+            background-color: #dc3545; /* Red background for "No" button */
+        }
+
+        .button.no:hover {
+            background-color: #c82333; /* Darker red on hover */
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f1f1f1; /* Light grey background */
+            color: #333; /* Darker text color */
+            padding: 10px 0;
+            text-align: center;
+            font-size: 14px;
+        }
+        
+    </style>
+</head>
+<body>
+    <img src="{{ url_for('static', filename='gif3.gif') }}" alt="GIF">
+    <h1>Mai janta Tha You Love me.🥰🥰🥰❤️❤️❤️</h1>
+    <h3>💘💘💘</h3>
+
+    <div class="button-container">
+        <a href="{{ url_for('final_index') }}" class="button no">Thankyou I have Send Your Response To Ashveen  </a>
+        
+    </div>
+    <div class="footer"></div>
+        Website designed by Ashveen Verma 
+    </div>
+</body>
+</html>

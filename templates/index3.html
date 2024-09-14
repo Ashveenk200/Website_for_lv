@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L0ve</title>
+    <style>
+        body {
+            background-color: pink;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px; /* Space between images */
+            margin-bottom: 20px; /* Space below images */
+        }
+
+        img {
+            max-width: 45%; /* Adjust width as needed */
+            height: auto;
+            border-radius: 25px;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            background-color: blue;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: darkblue;
+        }
+
+        .button.no {
+            background-color: #dc3545; /* Red background for "No" button */
+        }
+
+        .button.no:hover {
+            background-color: #c82333; /* Darker red on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='gif4.gif') }}" alt="GIF 4">
+        <img src="{{ url_for('static', filename='gif7.gif') }}" alt="GIF 7">
+    </div>
+    <h1>Ek Baar Aur Soch Lo!!</h1>
+    <h3>Why are you doing this?🤔🙄😬. I am Yours Only...</h3>
+
+    <div class="button-container">
+        <a href="{{ url_for('final_achi_index') }}" class="button no">Yes</a>
+        <a href="{{ url_for('index4') }}" class="button">No</a>
+    </div>
+</body>
+</html>
