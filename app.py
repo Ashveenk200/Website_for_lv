@@ -1,4 +1,5 @@
 from flask import Flask , render_template
+app = Flask(__name__, static_folder='static')
 
 # Create an instance of the Flask class
 app = Flask(__name__)
